@@ -1,10 +1,11 @@
 import Experience from "@/app/components/Experience";
 import Hero from "@/app/components/Hero";
-import Navbar from "@/app/components/Navbar";
 import About from "./components/About";
 import ThemeToggle from "./components/ThemeToggle";
 import Footer from "./components/Footer";
 import ProjectList from "./components/ProjectList";
+import Achievements from "./components/Achievements";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
     <ThemeToggle />
     <Hero />
     <About />
+    <Services />
     <ProjectList />
+    <Achievements />
     <Experience />
     <Footer />
     </>
