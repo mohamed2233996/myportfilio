@@ -24,7 +24,7 @@ export default function Experience() {
     ];
 
     return (
-        <section className="bg-background text-foreground py-32 px-6 transition-colors duration-500">
+        <section className="bg-background text-foreground py-20 px-6 transition-colors duration-500">
             <div className="max-w-7xl mx-auto">
 
                 <motion.h2 

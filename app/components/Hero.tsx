@@ -12,7 +12,7 @@ const Hero = () => {
                 <h1 className="text-[10vw] md:text-[12vw] leading-[0.85] font-black uppercase tracking-tighter">
                     FRONTEND <br />
                     DEVELOPER <br />
-                    <span className="dark:text-white/20 transition-colors duration-500">DESIGNER©</span>
+                    <span>DESIGNER©</span>
                 </h1>
 
                 {/* Info Line */}

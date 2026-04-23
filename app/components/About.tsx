@@ -3,7 +3,7 @@ import { Reveal } from './Reveal';
 
 const About = () => {
     return (
-        <section id='about' className="py-40 px-6 bg-background text-foreground border-t border-black/5 dark:border-white/5 transition-colors duration-500">
+        <section id='about' className="py-20 px-6 bg-background text-foreground border-t border-black/5 dark:border-white/5 transition-colors duration-500">
             <div className="max-w-4xl mx-auto text-center">
                 <Reveal>
                     <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 dark:text-gray-500 mb-12 block">
