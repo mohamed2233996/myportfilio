@@ -28,6 +28,7 @@ const Hero = () => {
                     alt="M. Gamal"
                     fill
                     priority
+                    quality={80}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                     className="object-cover grayscale hover:grayscale-0 transition duration-500"
                 />
