@@ -7,12 +7,11 @@ export default function ThemeToggle() {
     const [mounted, setMounted] = useState(false);
     const [isRotating, setIsRotating] = useState(false);
 
-    // عشان نتجنب مشاكل الـ Hydration في Next.js
     useEffect(() => setMounted(true), []);
 
     const playClick = () => {
         const audio = new Audio('/click.wav');
-        audio.volume = 0.4; //
+        audio.volume = 0.5; //
         audio.play();
     };
 
@@ -23,7 +22,6 @@ export default function ThemeToggle() {
         setIsRotating(true); // بدء الأنيميشن
         setTheme(theme === "dark" ? "light" : "dark");
 
-        // إيقاف الأنيميشن بعد انتهاء الدوران (500ms)
         setTimeout(() => setIsRotating(false), 400);
     };
 
@@ -35,7 +33,7 @@ export default function ThemeToggle() {
             className={`fixed bottom-8 right-8 z-100 transition-all active:scale-90 group`}
         >
             <div
-                className={`w-12 h-12 rounded-full border border-black/10 dark:border-white/10 flex overflow-hidden shadow-sm hover:shadow-lg transition-transform duration-500 ease-in-out ${
+                className={`w-12 h-12 rounded-full border border-black/20 dark:border-white/20 flex overflow-hidden shadow-md hover:shadow-xl transition-transform duration-500 ease-in-out ${
                     isRotating ? 'rotate-135' : 'rotate-300' 
                 }`}
             >

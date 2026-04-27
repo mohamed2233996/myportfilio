@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Sans_Arabic } from "next/font/google"; 
+import { Archivo, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./components/Providers";
+import CustomCursor from "./components/CustomCursor";
+import Preloader from "./components/Preloader";
+import SmoothScroll from "./components/SmoothScroll";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -13,12 +16,15 @@ const archivo = Archivo({
 const arabicFont = IBM_Plex_Sans_Arabic({
   variable: "--font-arabic",
   subsets: ["arabic"],
-  weight: ["400", "700"], 
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Mohamed Gamal | Frontend Developer & Designer",
   description: "Crafting minimalist digital experiences.",
+  openGraph: {
+    images: ["/icon.svg"],
+  },
 };
 
 export default function RootLayout({
@@ -27,12 +33,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<html
+    <html
       lang="en"
-      className={`${archivo.variable} ${arabicFont.variable} h-full antialiased`}
+      className={`${archivo.variable} ${arabicFont.variable} antialiased`}
+      suppressHydrationWarning={true}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
-        <Providers>{children}</Providers>
+      <body className="flex flex-col bg-background text-foreground">
+        <div className="grain-overlay" />
+        <CustomCursor />
+        <Preloader />
+        <SmoothScroll>
+          <Providers>{children}</Providers>
+        </SmoothScroll>
       </body>
     </html>
   );

@@ -24,12 +24,12 @@ export default function Services() {
         <section className="py-20 bg-background text-foreground" id="services">
             <div className="max-w-7xl mx-auto px-6">
 
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8 block">
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-600 mb-8 block">
                     How I can help
                 </span>
 
                 <h2 className="text-[8vw] md:text-[5vw] font-black leading-[0.9] tracking-tighter uppercase mb-20">
-                    Services <br /> <span className="text-gray-400 italic">& Solutions</span>
+                    Services <br /> <span className="text-gray-500 italic">& Solutions</span>
                 </h2>
 
                 <div className="border-t border-foreground/10">
@@ -44,14 +44,14 @@ export default function Services() {
                         >
                             <div className="py-10 md:py-16 flex flex-col md:flex-row md:items-center justify-between gap-8 px-2">
                                 <div className="flex items-start gap-6 md:gap-8">
-                                    <span className="text-xs font-mono opacity-40 mt-2">{service.id}</span>
+                                    <span className="text-xs font-mono opacity-70 mt-2">{service.id}</span>
                                     <div className="flex flex-col gap-2">
                                         <h3 className={`text-3xl md:text-6xl font-bold uppercase tracking-tighter transition-all duration-500 ${expanded === service.id ? "italic translate-x-2" : ""
                                             }`}>
                                             {service.title}
                                         </h3>
                                         {!expanded && (
-                                            <span className="md:hidden text-[8px] font-black uppercase tracking-[0.2em] text-gray-400">
+                                            <span className="md:hidden text-[8px] font-black uppercase tracking-[0.2em] text-gray-500">
                                                 Tap to explore +
                                             </span>
                                         )}
@@ -87,7 +87,7 @@ export default function Services() {
                                         className="overflow-hidden"
                                     >
                                         <div className="pb-12 md:pl-20 max-w-2xl">
-                                            <p className="text-lg md:text-2xl text-gray-500 dark:text-gray-400 leading-relaxed font-medium">
+                                            <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-500 leading-relaxed font-medium">
                                                 {service.description}
                                             </p>
                                             <motion.button

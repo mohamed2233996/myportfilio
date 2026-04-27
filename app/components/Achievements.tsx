@@ -27,10 +27,10 @@ export default function Achievements() {
                             className="flex flex-col gap-2"
                         >
                             <h4 className="text-6xl md:text-8xl font-black tracking-tighter tabular-nums">
-                                {item.cont}<span className="text-gray-400 dark:text-gray-600">+</span>
+                                {item.cont}<span className="text-gray-500 dark:text-gray-600">+</span>
                             </h4>
 
-                            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 leading-none">
+                            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 leading-none">
                                 {item.title}
                             </span>
                         </motion.div>

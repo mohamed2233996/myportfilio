@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Image from 'next/image';
 
 const Hero = () => {
     return (
@@ -7,7 +8,6 @@ const Hero = () => {
         <section className="bg-background min-h-screen text-foreground flex flex-col items-center pt-20 px-6 transition-colors duration-500">
             <Navbar />
 
-            {/* Main Title - الـ Typography الجريء */}
             <div className="text-center mb-16">
                 <h1 className="text-[10vw] md:text-[12vw] leading-[0.85] font-black uppercase tracking-tighter">
                     FRONTEND <br />
@@ -22,12 +22,14 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Profile Image */}
-            <div className="w-full max-w-md aspect-4/5 rounded-[60px] overflow-hidden bg-gray-300 dark:bg-[#1a1a1a] transition-colors duration-500 border border-black/5 dark:border-white/5">
-                <img
-                    src="/Me.png"
+            <div className="relative w-full max-w-md aspect-4/5 rounded-[60px] overflow-hidden bg-gray-300 dark:bg-[#1a1a1a] transition-colors duration-500 border border-black/5 dark:border-white/5">
+                <Image
+                    src="/Me.webp"
                     alt="M. Gamal"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 dark:opacity-80 dark:hover:opacity-100"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                    className="object-cover grayscale hover:grayscale-0 transition duration-500"
                 />
             </div>
         </section>

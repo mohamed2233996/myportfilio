@@ -50,12 +50,12 @@ export default function ProjectList() {
     <section className="py-20 bg-background text-foreground transition-colors duration-500" id="work">
       <div className="max-w-7xl mx-auto px-6">
 
-        <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-8 block">
+        <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-8 block">
           Portfolio Archive
         </span>
 
         <h2 className="text-[10vw] font-black leading-[0.8] tracking-tighter uppercase mb-20">
-          Selected <br /> <span className="dark:text-gray-600 text-gray-400 italic">Work</span>
+          Selected <br /> <span className="dark:text-gray-600 text-gray-500 italic">Work</span>
         </h2>
 
         <div className="border-t border-foreground/10">
@@ -75,16 +75,16 @@ export default function ProjectList() {
                   className="group flex flex-col md:flex-row justify-between items-start md:items-center py-12 md:py-16 transition-all px-4 relative overflow-visible cursor-default"
                 >
                   <div className="z-10 w-full md:w-auto">
-                    <span className="text-[10px] font-mono opacity-40 mb-3 block">
+                    <span className="text-[10px] font-mono opacity-70 mb-3 block">
                       {index < 9 ? `0${index + 1}` : index + 1}
                     </span>
-                    <h3 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter group-hover:translate-x-4 transition-transform duration-500 break-words">
+                    <h3 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter group-hover:translate-x-4 transition-transform duration-500 wrap-break-word">
                       {project.name}
                     </h3>
                   </div>
 
                   <div className="flex flex-col md:items-end gap-4 z-10 mt-4 md:mt-0 w-full md:w-auto">
-                    <p className="text-gray-500 dark:text-gray-400 max-w-sm text-xs leading-relaxed md:text-right opacity-80">
+                    <p className="text-gray-600 dark:text-gray-500 max-w-sm text-xs leading-relaxed md:text-right opacity-80">
                       {project.disc}
                     </p>
 

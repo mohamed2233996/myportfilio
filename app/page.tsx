@@ -6,18 +6,22 @@ import Footer from "./components/Footer";
 import ProjectList from "./components/ProjectList";
 import Achievements from "./components/Achievements";
 import Services from "./components/Services";
+import ScrollingText from "./components/ScrollText";
 
 export default function Home() {
   return (
     <>
-    <ThemeToggle />
-    <Hero />
-    <About />
-    <Services />
-    <ProjectList />
-    <Achievements />
-    <Experience />
-    <Footer />
+      <main>
+        <ThemeToggle />
+        <Hero />
+        <About />
+        <Services />
+        <ScrollingText />
+        <ProjectList />
+        <Achievements />
+        <Experience />
+      </main>
+      <Footer />
     </>
   );
 }

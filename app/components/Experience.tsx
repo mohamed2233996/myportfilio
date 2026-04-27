@@ -50,22 +50,22 @@ export default function Experience() {
 
                             <div className="relative z-10 flex flex-col md:flex-row justify-between items-start gap-8">
                                 <div className="flex-1">
-                                    <h3 className="text-4xl md:text-5xl font-bold tracking-tight uppercase transition-all duration-500 group-hover:pl-4 group-hover:text-gray-500">
+                                    <h3 className="text-4xl md:text-5xl font-bold tracking-tight uppercase transition-all duration-500 group-hover:pl-4 group-hover:text-gray-600">
                                         {exp.company}
                                     </h3>
                                     
                                     <div className="mt-4 flex flex-col gap-1">
-                                        <span className="text-xs font-black uppercase tracking-[0.2em] text-gray-400">
+                                        <span className="text-xs font-black uppercase tracking-[0.2em] text-gray-500">
                                             {exp.role}
                                         </span>
-                                        <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xl mt-4 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <p className="text-sm text-gray-600 dark:text-gray-500 max-w-xl mt-4 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                             {exp.description}
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className="text-right">
-                                    <span className="font-mono text-sm opacity-40 group-hover:opacity-100 transition-opacity">
+                                    <span className="font-mono text-sm opacity-70 group-hover:opacity-100 transition-opacity">
                                         {exp.period}
                                     </span>
                                 </div>
@@ -80,10 +80,10 @@ export default function Experience() {
                     whileInView={{ opacity: 1 }}
                     className="mt-32 border-t-4 border-foreground pt-10"
                 >
-                    <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-4 text-gray-400">Credentials</h4>
+                    <h4 className="text-xs font-black uppercase tracking-[0.3em] mb-4 text-gray-500">Credentials</h4>
                     <div className="flex flex-col md:flex-row justify-between items-end gap-4">
                         <span className="text-2xl font-bold uppercase">Bachelor of Commerce</span>
-                        <span className="text-gray-500 font-medium">Menoufia University • Class of 2024</span>
+                        <span className="text-gray-600 font-medium">Menoufia University • Class of 2024</span>
                     </div>
                 </motion.div>
             </div>
